@@ -36,7 +36,7 @@ const Card = ({ error, loading, person, showInfo }: CardProps) => {
                 
                 <div className="flex gap-4 mt-4 justify-between">
                     <InfoIcon 
-                        iconSrc="/email.svg" 
+                        iconSrc="/email.svg"
                         message="Email"
                         info={person.email}
                         showInfo={showInfo}

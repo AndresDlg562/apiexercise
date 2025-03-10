@@ -16,9 +16,13 @@ export default function Home() {
   }
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1>Random Person</h1>
-      <button onClick={() => fetchData()}>Fetch Data</button>
+    <div className="grid items-center justify-items-center min-h-screen p-20 gap-4">
+      <h1 className="text-4xl font-bold">
+        Random Person
+      </h1>
+      <button onClick={() => fetchData()} className="bg-blue-500 text-white px-4 py-2 rounded-md">
+        Fetch Data
+      </button>
       <h1>{infoTitle}</h1>
       <h1>{infoMessage}</h1>
 
