@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {  PersonResponse, PersonResult   } from "@/types/peopleresponse";
+import {  PersonResult   } from "@/types/peopleresponse";
 import { Person } from "@/types/person";
 import axios from "axios";
 
@@ -37,7 +37,7 @@ export const useFetchPerson = () => {
     }
     
     useEffect(() => {
-    fetchData
+    fetchData();
     }, []);
 
     return { people, loading, error, fetchData };

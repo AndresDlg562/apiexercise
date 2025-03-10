@@ -1,10 +1,8 @@
 'use client';
 
-import Image from "next/image";
 import { useState } from "react";
 import Card from "@/components/Card";
 import { useFetchPerson } from "@/app/hooks/getPerson";
-import { Location } from '../types/peopleresponse';
 
 
 export default function Home() {
